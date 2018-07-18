@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-scope '/admin' do
+scope '/admin', module: 'admin' do
   resources :preferences, only: [:index, :new]
 end
 
